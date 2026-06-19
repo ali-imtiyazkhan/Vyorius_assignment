@@ -330,6 +330,7 @@ function KanbanBoard() {
                           title: file.name,
                           priority: "Medium",
                           category: "Feature",
+                          column: col.id,
                           attachments: [{ name: file.name, url, type: file.type }],
                         });
                       }

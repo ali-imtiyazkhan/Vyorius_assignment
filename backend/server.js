@@ -18,7 +18,7 @@ io.on("connection", (socket) => {
     const task = {
       id: nextId++,
       title: data.title,
-      column: "todo",
+      column: data.column || "todo",
       priority: data.priority || "Medium",
       category: data.category || "Feature",
       attachments: [],
