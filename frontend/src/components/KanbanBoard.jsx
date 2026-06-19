@@ -7,6 +7,7 @@ import {
   useSensor,
   useSensors,
   PointerSensor,
+  useDroppable,
 } from "@dnd-kit/core";
 import {
   SortableContext,
@@ -98,6 +99,20 @@ function SortableTaskCard({ task, onDelete, onUpdate }) {
           ))}
         </div>
       )}
+    </div>
+  );
+}
+
+function DroppableColumn({ id, children }) {
+  const { setNodeRef, isOver } = useDroppable({ id });
+  return (
+    <div
+      ref={setNodeRef}
+      className="kanban-column"
+      data-testid={`column-${id}`}
+      style={{ background: isOver ? "#d0d4e0" : undefined }}
+    >
+      {children}
     </div>
   );
 }
@@ -292,11 +307,7 @@ function KanbanBoard() {
       >
         <div className="kanban-columns">
           {COLUMNS.map((col) => (
-            <div
-              key={col.id}
-              className="kanban-column"
-              data-testid={`column-${col.id}`}
-            >
+            <DroppableColumn key={col.id} id={col.id}>
               <h3 className="column-header">
                 {col.title} ({getColumnTasks(col.id).length})
               </h3>
@@ -342,7 +353,7 @@ function KanbanBoard() {
               >
                 Upload file to {col.title}
               </button>
-            </div>
+            </DroppableColumn>
           ))}
         </div>
         <DragOverlay>
