@@ -12,7 +12,9 @@
 
 ---
 
-https://github.com/user-attachments/assets/0c0f0a0e-0b0c-0d0e-0f0a-0b0c0d0e0f0a
+<p align="center">
+  <video src="https://vyorius-assignment-ivory.vercel.app/Screen%20Recording%202026-06-20%20212855.mp4" controls width="800" />
+</p>
 
 ---
 
