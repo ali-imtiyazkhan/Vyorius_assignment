@@ -29,7 +29,7 @@ import {
   Legend,
 } from "recharts";
 
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = import.meta.env.VITE_WS_URL || "http://localhost:5000";
 const COLUMNS = [
   { id: "todo", title: "To Do" },
   { id: "in-progress", title: "In Progress" },

@@ -1,12 +1,12 @@
 import React from "react";
-import KanbanBoard from "./components/KanbanBoard";
+import Dashboard from "./components/Dashboard";
+import KanbanLanding from "./KanbanLanding";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Real-time Kanban Board</h1>
-      <KanbanBoard />
-    </div>
+    <KanbanLanding>
+      <Dashboard />
+    </KanbanLanding>
   );
 }
 
