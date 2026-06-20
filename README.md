@@ -13,8 +13,12 @@
 ---
 
 <p align="center">
-  <video src="https://vyorius-assignment-ivory.vercel.app/Screen%20Recording%202026-06-20%20212855.mp4" controls width="800" />
+  <a href="https://vyorius-assignment-ivory.vercel.app/Screen%20Recording%202026-06-20%20212855.mp4" target="_blank">
+    <img src="https://img.shields.io/badge/▶-Watch%20Demo-1d1d1d?style=for-the-badge&logo=github" alt="Watch Demo" />
+  </a>
 </p>
+
+> [▶ Click here to watch the demo video](https://vyorius-assignment-ivory.vercel.app/Screen%20Recording%202026-06-20%20212855.mp4)
 
 ---
 
